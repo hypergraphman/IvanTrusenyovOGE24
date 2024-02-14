@@ -1,16 +1,6 @@
-def game_init():
-    pass
-
-
-def step_game():
-    pass
-
-
-def render_game():
-    pass
-
-
-game_init()
-while True:
-    step_game()
-    render_game()
+s1 = input()
+s2 = input()
+if s1 < s2:
+    print(s1 + s2)
+else:
+    print(s2 + s1)
