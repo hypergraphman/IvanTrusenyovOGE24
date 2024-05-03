@@ -1,6 +1,16 @@
-x = int(input())
-month = (x + 19) // 20
-day = (x % 20 - 1) % 20
-month = str(month)
-day = str(day)
-print('Месяц', month + ',', "день", day + '.')
+mn1 = mn2 = float('inf')
+mx1 = mx2 = -float('inf')
+while (n := int(input())) != 0:
+    if n > mx1:
+        mx2 = mx1
+        mx1 = n
+    elif n > mx2:
+        mx2 = n
+
+    if n < mn1:
+        mn2 = mn1
+        mn1 = n
+    elif n < mn2:
+        mn2 = n
+print(mx1 + mx2)
+print(mn1 + mn2)
